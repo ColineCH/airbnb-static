@@ -1,7 +1,33 @@
 .owner-description {
   display: flex;
   align-items: center;
-  h3 {
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    color: $gray-light;
+  }
+}
+
+.container  h3 {
+    margin-top: 0;
+}
+
+.owner-picture p{
+
+}
+.flat-summary {
+  padding-left: 20px;
+  h1 {
+    font-size: 18px;
     margin-top: 0;
   }
+}
+
+.form-padded {
+  padding: 8px;
+}
+
+.form-margin {
+  margin-bottom: 5px;
+  padding: 10px;
 }

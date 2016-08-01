@@ -11,10 +11,10 @@
       <div class="owner-description">
         <div class="owner-picture">
           <%= image_tag flat.owner_picture, class: "avatar-large" %>
-          <p><%= flat.owner_name.capitalize %></p>
+          <p class="text-center"><%= flat.owner_name.capitalize %></p>
         </div>
         <div class="flat-summary">
-          <h3><%= flat.summary %></h3>
+          <h1><%= flat.summary %></h1>
           <p><%= flat.city %></p>
           <% flat.rating.times do %>
             <i class="fa fa-star" style="color: yellow"> </i>
@@ -26,27 +26,37 @@
       </div>
     </div>
     <div class="col-xs-12 col-sm-4">
-        <h3>Book this flat</h3>
-        <form action="#" class="form-inline">
+      <div class="wrapper-grey form-margin">
+        <h4>Book this flat</h4>
         <div class="row">
+          <form action="">
           <div class="col-xs-6">
-            <input type="text" class="form-control input-lg"; style="width: 100%"; placeholder="checkin">
+            <div class="form-padded">
+              <input type="text" class="form-control" placeholder="checkin" id="checkin">
+            </div>
           </div>
           <div class="col-xs-6">
-            <input type="text" class="form-control input-lg"; style="width: 100%"; placeholder="checkout">
+            <div class="form-padded">
+              <input type="text" class="form-control" placeholder="checkout" id="checkin">
+            </div>
           </div>
           <div class="col-xs-12">
-            <select name="" id="" class="form-control input-lg"; style="width: 100%"; >
-              <option value="1">1 guest</option>
-              <option value="2">2 guests</option>
-              <option value="3">3 guests</option>
-            </select>
+            <div class="form-padded">
+              <select name="" id="" class="form-control input-lg">
+                <option value="1">1 person</option>
+                <option value="2">2 persons</option>
+                <option value="3">3 persons</option>
+              </select>
+            </div>
           </div>
           <div class="col-xs-12">
-            <input type="submit" class="btn btn-danger btn-lg" style="width: 100%"; value="Book it">
+            <div class="form-padded">
+              <input type="submit" class="btn btn-danger btn-lg" style="width: 100%" value="Book it">
+            </div>
           </div>
+        </form>
         </div>
-      </form>
+      </div>
     </div>
   </div>
 </div>
