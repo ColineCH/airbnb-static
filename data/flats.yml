@@ -13,8 +13,9 @@ seb:
   beds: 1
   property_type: Apartment
   room_type: Entire home/apt
+  rating: 4
 romain:
-  owner_name: Romain
+  owner_name: romain
   card_picture: card-london.jpeg
   owner_picture: romain.jpeg
   name: Romain's home
@@ -28,6 +29,7 @@ romain:
   beds: 1
   property_type: Apartment
   room_type: Entire home/apt
+  rating: 3
 anne:
   owner_name: Anne
   card_picture: card-brussels.jpeg
@@ -43,4 +45,5 @@ anne:
   beds: 1
   property_type: Apartment
   room_type: Entire home/apt
+  rating: 5
 
