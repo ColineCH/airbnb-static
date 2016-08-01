@@ -1,0 +1,18 @@
+<!-- Read from data.flats with owner's name as key -->
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+<div class="container text-left padded">
+  <ul class="list-inline">
+    <li>
+      <%= image_tag flat.owner_picture, class: "avatar-large" %>
+      <p><%= flat.owner_name %></p>
+    </li>
+    <li>
+      <h1><%= flat.summary %></h1>
+      <p><%= flat.city %></p>
+    </li>
+  </ul>
+
+</div>
+
