@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- For Bootstrap responsiveness -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>The Middleman</title>
+
+    <link href="../stylesheets/all.css" rel="stylesheet" />
+    <script src="../javascripts/all.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="flats flats_seb">
+
+    <div class="navbar-wagon navbar-wagon-fixed">
+  <!-- Logo -->
+<a class="navbar-wagon-brand" href="/airbnb-static">    <img src="../images/lewagon.png" />
+</a>
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <!-- Search form -->
+    <form action="" class="navbar-wagon-search">
+      <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
+      <button type="submit" class="navbar-wagon-search-btn">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+
+    <!-- Text link -->
+    <a class="navbar-wagon-item navbar-wagon-link" href="https://www.lewagon.com">Wagon</a>
+<!--     <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link">Wagon</a>
+ -->
+    <!-- Text link -->
+    <a class="navbar-wagon-item navbar-wagon-link" href="team.html">Team</a>
+    <!-- <a href="" class="navbar-wagon-item navbar-wagon-link">Team</a> -->
+
+    <!-- Notification link-->
+<a class="navbar-wagon-item navbar-wagon-link" href="">      <div class="badge-container">
+        <i class="fa fa-envelope-o"></i>
+        <div class="badge badge-blue">3</div>
+      </div>
+</a>
+   <!--  <a href="" class="navbar-wagon-item navbar-wagon-link">
+      <div class="badge-container">
+        <i class="fa fa-envelope-o"></i>
+        <div class="badge badge-blue">3</div>
+      </div>
+    </a> -->
+
+    <!-- Profile picture and dropdown -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <img id="navbar-wagon-menu" class="avatar dropdown-toggle" data-toggle="dropdown" src="http://placehold.it/50x50" />
+
+        <!-- <img src="http://placehold.it/50x50" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown"> -->
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li>
+          <a href="#">Profile</a>
+          <!-- <a href="#">Profile</a> -->
+          </li>
+          <li>
+            <a href="#">Dashboard</a>
+            <!-- <a href="#">Dashboard</a> -->
+          </li>
+          <li>
+            <a href="#">Log Out</a>
+            <!-- <a href="#">Log Out</a> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Button (call-to-action) -->
+    <a class="navbar-wagon-item navbar-wagon-button btn" href="">Post stuff</a>
+    <!-- <a href="" class="navbar-wagon-item navbar-wagon-button btn">Post stuff</a> -->
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li>
+          <a href="#">Some mobile link</a>
+          <!-- <a href="#">Some mobile link</a> -->
+        </li>
+        <li>
+          <a href="#">Other one</a>
+          <!-- <a href="#">Other one</a> -->
+        </li>
+        <li>
+          <a href="#">Other one</a>
+          <!-- <a href="#">Other one</a> -->
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <!-- Read from data.flats with owner's name as key -->
+
+<!-- Inject flat data in template -->
+ <div class="banner" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(../images/card-paris.jpg); height: 50vh;">
+ </div>
+
+ <div class="container padded">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+      <div class="owner-description">
+        <div class="owner-picture">
+          <img class="avatar-large" src="../images/seb.jpg" />
+          <p class="text-center">Sebastien</p>
+        </div>
+        <div class="flat-summary">
+          <h1>Charming roof top flat</h1>
+          <p>Paris, France</p>
+            <i class="fa fa-star" style="color: yellow"> </i>
+            <i class="fa fa-star" style="color: yellow"> </i>
+            <i class="fa fa-star" style="color: yellow"> </i>
+            <i class="fa fa-star" style="color: yellow"> </i>
+            <i class="fa fa-star" style="color: grey"> </i>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <div class="wrapper-grey form-margin">
+        <h4>Book this flat</h4>
+        <div class="row">
+          <form action="">
+          <div class="col-xs-6">
+            <div class="form-padded">
+              <input type="text" class="form-control" placeholder="checkin" id="checkin">
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="form-padded">
+              <input type="text" class="form-control" placeholder="checkout" id="checkin">
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="form-padded">
+              <select name="" id="" class="form-control input-lg">
+                <option value="1">1 person</option>
+                <option value="2">2 persons</option>
+                <option value="3">3 persons</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="form-padded">
+              <input type="submit" class="btn btn-danger btn-lg" style="width: 100%" value="Book it">
+            </div>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4">
+            <ul class="list-inline">
+              <li>
+<a href="#">                  <i class="fa fa-youtube"></i>
+</a>              </li>
+              <li>
+<a href="#">                  <i class="fa fa-instagram"></i>
+</a>              </li>
+              <li>
+<a href="#">                  <i class="fa fa-facebook"></i>
+</a>              </li>
+              <li>
+<a href="#">                  <i class="fa fa-twitter"></i>
+</a>              </li>
+            </ul>
+          </div>
+          <div class="col-xs-8 text-right">
+            <p>This is a Airbnb Home challenge @ LeWagon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
